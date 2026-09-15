@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Unkempt";
+  font-weight: 400;
+  font-style: cursive;
+    color:#510296;
+    background-color:#ff14919e;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    font-size: 72px;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    font-size: 40px;
+    line-height: 1;
+}
+
+h3 {
+    font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+}
+
+section {
+    padding: 64px 24px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(17, 0, 255);
+}
+
+.highlight-section {
+    background-color: rgb(250, 28, 143);
+    color: rgb(112, 53, 240);
+}
+
+a {
+    color:blueviolet;
+    font-weight: bold;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #510296;
+    color: rgb(13, 243, 47);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #510296;
+    color: rgb(32, 226, 233);
+}
+
+.feature-image {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.album-cover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 24px;
+    background-color: #000000;
+    border-bottom: 1px solid #7600ba;
+}
+.logo {
+    font-size: 22px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.site-nav{
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.site-nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.site-nav a:hover {
+    color: #ff00c8;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .site-nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .site-nav a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+.two-column {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.one-third {
+    display:flex;
+    gap: 32px;
+}
+
+.one-third > *:first-child{
+    flex: 1;
+}
+
+.one-third > *:last-child {
+    flex: 2;
+}
+
+@media (max-width: 768px) {
+    .two-column,
+    .one-third {
+        flex-direction: column;
+    }
+}
+
+.album-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.album-grid article {
+  flex: 1;
+}
+
+.album-cover {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .album-grid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  section {
+    padding: 48px 20px;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
